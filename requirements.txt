@@ -1,0 +1,6 @@
+flask
+python-dotenv
+pylint
+ringcentral_chatbot_server
+ringcentral_bot_framework == 0.5.2
+boto3
