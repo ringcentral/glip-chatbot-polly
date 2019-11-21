@@ -34,14 +34,15 @@ def botGotPostAddAction(
   """
   This is invoked when the user sends a message to the bot.
   """
-  if handledByExtension:
+  st = f'![:Person]({bot.id}) '
+  if not st in text or handledByExtension:
     return
-
+  ntxt = text.replace(st, '', 1)
   if f'![:Person]({bot.id})' in text:
     bot.sendMessage(
       groupId,
       {
-        'text': f'{text}'
+        'text': ntxt
       }
     )
 
