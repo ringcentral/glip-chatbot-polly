@@ -3,6 +3,8 @@
 
 Simple Glip bot can repeat user's message as requested.
 
+![ ](screenshots/ss.png)
+
 ## Prerequisites$
 
 - Python3.6+ and Pip3
