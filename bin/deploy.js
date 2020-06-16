@@ -48,7 +48,7 @@ async function run() {
   if (!arr || !arr[1]) {
     return log('build fails')
   }
-  let urlReal = `${arr[1]}/dev`
+  let urlReal = `${arr[1]}/prod`
   log(`RINGCENTRAL_CHATBOT_SERVER in api gate way: ${urlReal}`)
   if (urlReal !== url) {
     log('modify RINGCENTRAL_BOT_SERVER in dist/server.yml')
