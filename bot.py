@@ -9,6 +9,7 @@ __name__ = 'localConfig'
 __package__ = 'ringcentral_bot_framework'
 
 import copy
+import time
 
 def botJoinPrivateChatAction(bot, groupId, user, dbAction):
   """
