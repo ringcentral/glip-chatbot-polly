@@ -28,7 +28,7 @@ const {log} = console
 
 async function run() {
   log('start deploy')
-  let file = resolve(__dirname, '../dev/lambda/serverless.yml')
+  let file = resolve(__dirname, '../dev/lambda/env.yml')
   let yml = readYml(file)
   console.log(yml, 'yml')
   let url = yml.RINGCENTRAL_BOT_SERVER
