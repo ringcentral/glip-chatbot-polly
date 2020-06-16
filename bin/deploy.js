@@ -31,7 +31,7 @@ async function run() {
   let file = resolve(__dirname, '../dev/lambda/serverless.yml')
   let yml = readYml(file)
   console.log(yml, 'yml')
-  let url = yml.provider.environment.RINGCENTRAL_BOT_SERVER
+  let url = yml.RINGCENTRAL_BOT_SERVER
   // if (!url || !/^https:\/\/.+\.amazonaws\.com.+/.test(url)) {
   //   console.log('please set correct RINGCENTRAL_CHATBOT_SERVER in dist/.env.yml')
   //   process.exit(1)
@@ -52,7 +52,7 @@ async function run() {
   log(`RINGCENTRAL_CHATBOT_SERVER in api gate way: ${urlReal}`)
   if (urlReal !== url) {
     log('modify RINGCENTRAL_BOT_SERVER in dist/server.yml')
-    yml.provider.environment.RINGCENTRAL_BOT_SERVER = urlReal
+    yml.RINGCENTRAL_BOT_SERVER = urlReal
     let newYml = yaml.safeDump(yml)
     writeFileSync(file, newYml)
     run()
