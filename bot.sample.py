@@ -9,6 +9,7 @@ __name__ = 'localConfig'
 __package__ = 'ringcentral_bot_framework'
 
 import copy
+import time
 
 def botJoinPrivateChatAction(bot, groupId, user, dbAction):
   """
@@ -17,7 +18,7 @@ def botJoinPrivateChatAction(bot, groupId, user, dbAction):
   bot.sendMessage(
     groupId,
     {
-      'text': f'Hello, I am a parrot. Please reply "![:Person]({bot.id})" if you want to talk to me.'
+      'text': f'Hello, I am a BOT Poly, I will repeat your message as requested. Please reply "![:Person]({bot.id}) the-message-you-want-me-to-say" if you want me to say anything.'
     }
   )
 
@@ -34,14 +35,15 @@ def botGotPostAddAction(
   """
   This is invoked when the user sends a message to the bot.
   """
-  if handledByExtension:
+  st = f'![:Person]({bot.id}) '
+  if not st in text or handledByExtension:
     return
-
+  ntxt = text.replace(st, '', 1)
   if f'![:Person]({bot.id})' in text:
     bot.sendMessage(
       groupId,
       {
-        'text': f'![:Person]({creatorId}), you just posted "{text}".'
+        'text': ntxt
       }
     )
 
