@@ -44,11 +44,11 @@ rcs bot.py
 
 - Goto your ringcentral app's bot section, click 'Add to glip'
 - Login to [https://app.devtest.ringcentral.com](https://app.devtest.ringcentral.com), find the bot by searching its name. Talk to the bot.
-- Edit config.py to change bot bahavior and test in [https://glip-app.devtest.ringcentral.com](https://glip-app.devtest.ringcentral.com)
+- Edit `config.py` to change bot bahavior and test in [https://app.devtest.ringcentral.com](https://app.devtest.ringcentral.com)
 
 ## Create your own bot logic
 
-- You can edit/add method in `bot.py` you need to use, write your own bot logic, restart the app, check it in [https://glip-app.devtest.ringcentral.com](https://glip-app.devtest.ringcentral.com).
+- You can edit/add method in `bot.py` you need to use, write your own bot logic, restart the app, check it in [https://app.devtest.ringcentral.com](https://app.devtest.ringcentral.com).
 - You can read all configs available from [sample-bots/kitchen-sync.py](https://github.com/zxdong262/ringcentral-chatbot-python/blob/master/sample-bots/kitchen-sync.py)
 
 And we have examples bots you can check out as examples:
