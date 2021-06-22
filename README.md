@@ -44,7 +44,7 @@ rcs bot.py
 ## Test bot
 
 - Goto your ringcentral app's bot section, click 'Add to glip'
-- Login to [https://glip-app.devtest.ringcentral.com](https://glip-app.devtest.ringcentral.com), find the bot by searching its name. Talk to the bot.
+- Login to [https://app.devtest.ringcentral.com](https://app.devtest.ringcentral.com), find the bot by searching its name. Talk to the bot.
 - Edit config.py to change bot bahavior and test in [https://glip-app.devtest.ringcentral.com](https://glip-app.devtest.ringcentral.com)
 
 ## Create your own bot logic
