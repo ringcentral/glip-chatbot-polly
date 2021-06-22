@@ -1,11 +1,10 @@
-
-# glip-chatbot-poly
+# Glip Chatbot Polly
 
 Simple Glip bot can repeat user's message as requested.
 
 ![ ](screenshots/ss.png)
 
-## Prerequisites$
+## Prerequisites
 
 - Python3.6+ and Pip3
 - Create the bot App: Login to [developer.ringcentral.com](https://developer.ringcentral.com) and create an `public` `Server/Bot` app with permissions: `ReadAccounts, Edit Extensions, WebhookSubscriptions, Glip`(or more as you may need), ---> <a href="https://developer.ringcentral.com/new-app?name=Sample+Bot+App&desc=A+sample+app+created+in+conjunction+with+the+python+bot+framework&public=true&type=ServerBot&carriers=7710,7310,3420&permissions=ReadAccounts,EditExtensions,SubscriptionWebhook,Glip&redirectUri=" target="_blank">Click to Create app</a>
@@ -66,4 +65,3 @@ And we have examples bots you can check out as examples:
 ## License
 
 MIT
-  
